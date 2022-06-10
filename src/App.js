@@ -32,3 +32,4 @@ export default App;
 // output info on page 
 // sort information based on user selection
 // have a grid layout for the images
+
