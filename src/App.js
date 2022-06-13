@@ -1,5 +1,5 @@
 import './styles/sass/App.scss';
-import { firebase, instagramDatabase } from './firebase';
+import { instagramDatabase } from './firebase';
 
 // Add the push function to our list of Firebase module imports:
 import { ref, onValue } from 'firebase/database';
@@ -40,19 +40,21 @@ function App() {
 
       <main>
         {dataBase.map((info) => {
-          console.log(info.post.children.data)
+          // console.log(info.post.children.data);
           return (
-            <div key={info.post.id}>
+            <div className='wrapper post-container' key={info.post.id}>
               {info.post.children.data.map((img) => {
                 return (
-                  <div>
-                    <img src={img.media_url} alt="ig-img"/>
+                  <div className='image-container' key={img.id}>
+                    <img src={img.media_url} alt="ig-img" />
                   </div>
                 )
               })}
-              <p>
-                {info.post.caption}
-              </p>
+              <div className="caption-container">
+                <p>
+                  {info.post.caption}
+                </p>
+              </div>
             </div>
           )
         })}

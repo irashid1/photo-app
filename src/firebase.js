@@ -20,19 +20,4 @@ const firebaseConfig = {
 const firebase = initializeApp(firebaseConfig);
 export const instagramDatabase = getDatabase(firebase);
 
-// const database = firebase.database();
-
-// const ref = database.ref('data')
-// ref.on('value', gotData, errData);
-
-// function gotData(data) {
-//     console.log(data.val());
-// }
-
-
-// function errData(err) {
-//     console.log('Error!');
-//     console.log(err);
-// }
-
 export default firebase;
