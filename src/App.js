@@ -37,25 +37,34 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <h1>Chops<GiChopsticks/></h1>
+        <h1>Chops<GiChopsticks /></h1>
       </header>
 
       <main>
         {dataBase.map((info) => {
           return (
-            <div className='wrapper post-container' key={info.post.id}>
-              {info.post.children.data.map((img) => {
+            <div className='wrapper post-container parent' key={info.post.id}>
+              {/* {info.post.children.data.map((img) => {
                 return (
                   <div className='image-container' key={img.id}>
                     <img src={img.media_url} alt="ig-img" />
                   </div>
                 )
-              })}
+              })} */}
+              
+                
+              <div className="image-container child">
+
+                <img src={info.post.children.data[0].media_url} alt="portrait-of-a-server" />
+
+              </div>
               <div className="caption-container">
                 <p>
                   {info.post.caption}
                 </p>
               </div>
+              
+              
             </div>
           )
         })}
