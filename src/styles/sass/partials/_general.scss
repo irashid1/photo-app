@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Fascinate&family=Lato&display=swap");
+
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -8,6 +10,14 @@ main {
 
 h1 {
     text-align: center;
+    font-family: "Fascinate", cursive;
+    font-size: 6rem;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 50px;
 }
 
 img {
@@ -17,6 +27,23 @@ img {
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
-    width: 90%;
+    width: 80%;
 }
 
+.caption-container {
+    p {
+        padding: 20px 50px;
+        font-family: "Lato", sans-serif;
+        font-size: 1.1rem;
+    }
+}
+
+footer {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 10px 0;
+}

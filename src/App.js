@@ -5,6 +5,8 @@ import { instagramDatabase } from './firebase';
 import { ref, onValue } from 'firebase/database';
 import { useState, useEffect } from 'react';
 
+import { GiChopsticks } from "react-icons/gi";
+
 
 function App() {
 
@@ -35,12 +37,11 @@ function App() {
     <div className="App">
 
       <header className="App-header">
-        <h1>Photo App</h1>
+        <h1>Chops<GiChopsticks/></h1>
       </header>
 
       <main>
         {dataBase.map((info) => {
-          // console.log(info.post.children.data);
           return (
             <div className='wrapper post-container' key={info.post.id}>
               {info.post.children.data.map((img) => {
@@ -61,7 +62,7 @@ function App() {
       </main>
 
       <footer>
-
+        <p>Copyright and Images by Imtiaz Rashid</p>
       </footer>
 
     </div>
