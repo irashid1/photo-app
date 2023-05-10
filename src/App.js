@@ -44,13 +44,13 @@ function App() {
         {dataBase.map((info) => {
           return (
             <div className='wrapper post-container parent' key={info.post.id}>
-              {/* {info.post.children.data.map((img) => {
+              {info.post.children.data.map((img) => {
                 return (
                   <div className='image-container' key={img.id}>
                     <img src={img.media_url} alt="ig-img" />
                   </div>
                 )
-              })} */}
+              })}
               
                 
               <div className="image-container child">
