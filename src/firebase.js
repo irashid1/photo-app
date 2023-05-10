@@ -8,12 +8,13 @@ import { getDatabase } from 'firebase/database';
 // Your web app's Firebase configuration
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBJ8qGrtVHkq2p57GXawwK63v7t473WiiI",
-    authDomain: "photo-app-40b0e.firebaseapp.com",
-    projectId: "photo-app-40b0e",
-    storageBucket: "photo-app-40b0e.appspot.com",
-    messagingSenderId: "541485290871",
-    appId: "1:541485290871:web:59564375ffdac475b17d72"
+  apiKey: "AIzaSyBJ8qGrtVHkq2p57GXawwK63v7t473WiiI",
+  authDomain: "photo-app-40b0e.firebaseapp.com",
+  databaseURL: "https://photo-app-40b0e-default-rtdb.firebaseio.com",
+  projectId: "photo-app-40b0e",
+  storageBucket: "photo-app-40b0e.appspot.com",
+  messagingSenderId: "541485290871",
+  appId: "1:541485290871:web:59564375ffdac475b17d72"
 };
 
 // Initialize Firebase
