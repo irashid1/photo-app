@@ -32,7 +32,7 @@ function App() {
 
 
   console.log(dataBase);
-  // console.log(newArr);
+  console.log(instagramDatabase);
   // console.log(allData);
 
   return (
