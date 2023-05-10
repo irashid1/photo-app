@@ -13,6 +13,11 @@ function App() {
   const [dataBase, setDataBase] = useState([]);
 
   useEffect(() => {
+    console.log("useEffect is running!");
+    console.log(instagramDatabase);
+  })
+
+  useEffect(() => {
     const allData = ref(instagramDatabase, "data/");
     onValue(allData, (snapshot) => {
       const data = snapshot.val();
@@ -27,13 +32,14 @@ function App() {
         }
       }
       setDataBase(newArr);
+      console.log(allData);
     })
   }, [])
 
 
   console.log(dataBase);
   console.log(instagramDatabase);
-  // console.log(allData);
+
 
   return (
     <div className="App">
