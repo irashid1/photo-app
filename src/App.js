@@ -32,8 +32,8 @@ function App() {
 
 
   console.log(dataBase);
-  console.log(newArr);
-  console.log(allData);
+  // console.log(newArr);
+  // console.log(allData);
 
   return (
     <div className="App">
